@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libqe_kssolver_davidson.a CMakeFiles/qe_kssolver_davidson.dir/Davidson/cegterg.f90.o CMakeFiles/qe_kssolver_davidson.dir/Davidson/regterg.f90.o
+/usr/bin/ranlib ../lib/libqe_kssolver_davidson.a

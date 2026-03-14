@@ -1,0 +1,106 @@
+[masia000@login02 P2.6_KS_25_26]$ cd jobs/
+[masia000@login02 jobs]$ lsls
+-bash: lsls: command not found
+[masia000@login02 jobs]$ ls
+ans                 qe_t8_37389320.err  qe_t8_37389369.out  qe_t8_37389543.err  qe_t8_37389644.out
+qe_t8_37389137.err  qe_t8_37389320.out  qe_t8_37389414.err  qe_t8_37389543.out
+qe_t8_37389137.out  qe_t8_37389369.err  qe_t8_37389414.out  qe_t8_37389644.err
+[masia000@login02 jobs]$ cat *.out
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-tbb/2021.12.0
+Loading cmake/3.27.9
+  Loading requirement: nghttp2/1.57.0-634bffh zlib-ng/2.1.6-jkgunjc curl/8.7.1
+    gmake/4.4.1-phqmvks ncurses/6.5-svfl57u parallel MPI defs : np=           8 nb=           1   nd=           0
+ nks >
+          54          54          54       20412
+ ngm =        6610
+ npwx =         827
+
+          k = 0.0000 0.0000 0.0000 (   827 PWs)   bands (ev):
+     davidson     :     22.02s CPU     23.06s WALL (       1 calls)
+     fftw         :      1.27s CPU      1.31s WALL (   10212 calls)
+     ffts         :      0.00s CPU      0.37s WALL
+
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-tbb/2021.12.0
+Loading cmake/3.27.9
+  Loading requirement: nghttp2/1.57.0-634bffh zlib-ng/2.1.6-jkgunjc curl/8.7.1
+    gmake/4.4.1-phqmvks ncurses/6.5-svfl57u
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+ parallel MPI defs : np=           2 nb=           1   nd=           0
+ nks >
+          54          54          54       78732
+ ngm =       26437
+ npwx =        3308
+
+          k = 0.0000 0.0000 0.0000 (  3308 PWs)   bands (ev):
+
+     davidson     :     31.53s CPU     31.92s WALL (       1 calls)
+     fftw         :      4.63s CPU      4.73s WALL (    9666 calls)
+     ffts         :      0.02s CPU      0.03s WALL
+
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-tbb/2021.12.0
+Loading cmake/3.27.9
+  Loading requirement: nghttp2/1.57.0-634bffh zlib-ng/2.1.6-jkgunjc curl/8.7.1
+    gmake/4.4.1-phqmvks ncurses/6.5-svfl57u
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+ parallel MPI defs : np=           2 nb=           1   nd=           0
+ nks >
+          54          54          54       78732
+ ngm =       26437
+ npwx =        3308
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-tbb/2021.12.0
+Loading cmake/3.27.9
+  Loading requirement: nghttp2/1.57.0-634bffh zlib-ng/2.1.6-jkgunjc curl/8.7.1
+    gmake/4.4.1-phqmvks ncurses/6.5-svfl57u
+ parallel MPI defs : np=           4 nb=           1   nd=           0
+ nks >
+          54          54          54       40824
+ ngm =       13218
+ npwx =        1655
+
+          k = 0.0000 0.0000 0.0000 (  1655 PWs)   bands (ev):
+
+     davidson     :     22.91s CPU     24.77s WALL (       1 calls)
+     fftw         :      2.31s CPU      2.37s WALL (    9538 calls)
+     ffts         :      0.01s CPU      0.03s WALL
+
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-tbb/2021.12.0
+Loading cmake/3.27.9
+  Loading requirement: nghttp2/1.57.0-634bffh zlib-ng/2.1.6-jkgunjc curl/8.7.1
+    gmake/4.4.1-phqmvks ncurses/6.5-svfl57u
+ parallel MPI defs : np=          16 nb=           1   nd=           0
+ nks >
+          54          54          54       11664
+ ngm =        3304
+ npwx =         414
+
+          k = 0.0000 0.0000 0.0000 (   414 PWs)   bands (ev):
+     davidson     :      7.58s CPU      8.82s WALL (       1 calls)
+     fftw         :      1.00s CPU      1.05s WALL (   11084 calls)
+     ffts         :      0.00s CPU      0.01s WALL
+
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-tbb/2021.12.0
+Loading cmake/3.27.9
+  Loading requirement: nghttp2/1.57.0-634bffh zlib-ng/2.1.6-jkgunjc curl/8.7.1
+    gmake/4.4.1-phqmvks ncurses/6.5-svfl57u
+ parallel MPI defs : np=          32 nb=           1   nd=           0
+ nks >
+          54          54          54        5832
+ ngm =        1653
+ npwx =         207
+
+          k = 0.0000 0.0000 0.0000 (   207 PWs)   bands (ev):
+     davidson     :      5.22s CPU      5.99s WALL (       1 calls)
+     fftw         :      0.74s CPU      0.79s WALL (   11510 calls)
+     ffts         :      0.00s CPU      0.21s WALL
+
+[masia000@login02 jobs]$ 
+
+

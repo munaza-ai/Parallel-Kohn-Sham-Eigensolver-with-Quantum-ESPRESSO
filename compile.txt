@@ -1,0 +1,11 @@
+cmake .. \
+  -DQE_ENABLE_MPI=ON \
+  -DQE_FFTW_VENDOR=Intel_FFTW3 \
+  -DQE_ENABLE_SCALAPACK=ON \
+  -DBLA_VENDOR=Intel10_64lp \
+  -DCMAKE_Fortran_COMPILER=ifx \
+  -DCMAKE_C_COMPILER=icx \
+  -DCMAKE_CXX_COMPILER=icpx
+make
+
+

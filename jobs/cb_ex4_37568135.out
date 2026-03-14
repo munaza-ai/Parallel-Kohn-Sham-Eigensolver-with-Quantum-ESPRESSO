@@ -1,0 +1,45 @@
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-mpi/2021.12.1 intel-oneapi-tbb/2021.12.0
+Build successful!
+
+========================================
+EXERCISE 4
+========================================
+
+--- nk=, npool (cegterg) ---
+ parallel MPI defs : np=          32 nb=           1   nd=           0  nk=
+           1
+ nks >
+          27          27          27         729
+ ngm =         207
+ npwx =          31
+Timing summary:
+     davidson     :      8.19s CPU      8.38s WALL (      50 calls)
+     g_psi        :      0.00s CPU      0.00s WALL (     886 calls)
+     fftw         :      1.34s CPU      1.40s WALL (   55046 calls)
+     ffts         :      0.23s CPU      0.29s WALL
+
+
+
+--- nk=, npool (cegterg) ---
+ parallel MPI defs : np=          32 nb=           1   nd=           0  nk=
+           2
+ nks >
+          27          27          27        1458
+ ngm =         414
+ npwx =          54
+Timing summary:
+     davidson     :      5.65s CPU      6.24s WALL (      25 calls)
+     g_psi        :      0.00s CPU      0.00s WALL (     431 calls)
+     fftw         :      1.41s CPU      1.95s WALL (   35000 calls)
+     ffts         :      0.00s CPU      0.35s WALL
+
+
+
+--- nk=, npool (cegterg) ---
+ parallel MPI defs : np=          32 nb=           1   nd=           0  nk=
+           4
+ nks >
+          27          27          27        2916
+ ngm =         827
+ npwx =         109

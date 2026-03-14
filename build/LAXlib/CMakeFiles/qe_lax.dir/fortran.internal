@@ -1,0 +1,8 @@
+# The fortran modules provided by this target.
+provides
+ dspev_module.mod
+ laxlib_descriptor.mod
+ laxlib_parallel_include.mod
+ laxlib_processors_grid.mod
+ laxlib_ptoolkit.mod
+ zhpev_module.mod

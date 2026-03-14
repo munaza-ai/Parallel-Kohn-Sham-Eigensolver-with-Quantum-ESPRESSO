@@ -1,0 +1,79 @@
+#!/bin/bash
+# QUICK START GUIDE FOR GPU OFFLOADING
+# ======================================
+#
+# STEP 1: Build locally (optional, test build)
+# $ chmod +x build_openacc.sh
+# $ ./build_openacc.sh
+#
+# STEP 2: Submit to GPU queue
+# $ chmod +x job_gpu.sh
+# $ sbatch job_gpu.sh
+#
+# STEP 3: Check results
+# $ squeue --me                           # Check job status
+# $ cat jobs/cb_openacc_*.out             # View output
+# $ cat jobs/cb_openacc_*.err             # View errors
+# $ cat output_gpu.out                    # View miniapp results
+#
+# KEY CHANGES FOR GPU OFFLOADING:
+# ===============================
+#
+# 1. cb_davidson_main.f90
+#    - Added: !$acc enter data create(evc, eig)
+#    - Added: !$acc update device(evc, igk) before solver
+#    - Added: !$acc host_data use_device(eig) around cegterg
+#    - Added: !$acc update self(eig) before printing
+#    - Added: !$acc exit data delete(evc, eig) at cleanup
+#
+# 2. my_h_psi.f90
+#    - Wrapped with: !$acc data present(psi, hpsi)
+#    - Added: !$acc parallel loop directives
+#    - Added: !$acc host_data use_device() around FFT calls
+#
+# 3. cb_s_psi.f90 and cb_g_psi.f90
+#    - Added: !$acc data present() for arrays
+#    - Added: !$acc parallel loop directives
+#
+# 4. set_cb_potential.f90
+#    - Added: !$acc enter data create(vloc, fft_array)
+#    - Added: !$acc update device(vloc) at end
+#
+# 5. CMakeLists.txt
+#    - Added: qe_openacc to target_link_libraries()
+#
+# TROUBLESHOOTING:
+# ================
+#
+# Compilation errors about missing procedures (dev_memcpy, mp_sum):
+#   → Ensure qe_openacc is linked in CMakeLists.txt
+#   → Clean old build: rm -rf build/
+#   → Check module selection: module list
+#
+# MPI-related errors:
+#   → Set -DQE_ENABLE_MPI_MODULE=OFF in CMake
+#   → Load only: nvhpc + intel-oneapi-mkl (NO other MPI modules)
+#   → Purge all modules first: module purge
+#
+# GPU not found at runtime:
+#   → Check sinfo -p dcgp_gpu for available GPU nodes
+#   → Verify CUDA_VISIBLE_DEVICES is set correctly
+#   → Run: nvidia-smi (on GPU node)
+#
+# ENVIRONMENT SETUP ON LEONARDO:
+# ==============================
+module purge
+module load nvhpc/24.5
+module load intel-oneapi-mkl/2024.0.0
+
+# CMAKE FLAGS FOR GPU:
+cmake -DQE_ENABLE_CUDA=on \
+       -DQE_ENABLE_OPENMP=off \
+       -DQE_ENABLE_MPI_MODULE=OFF \
+       -DCMAKE_C_COMPILER=nvc \
+       -DCMAKE_Fortran_COMPILER=nvfortran \
+       -DCMAKE_BUILD_TYPE=Release \
+       ..
+
+# NVHPC COMPILATION FLAGS:
+nvfortran -acc -Minfo=accel -O3 myfile.f90  # Enable OpenACC with feedback

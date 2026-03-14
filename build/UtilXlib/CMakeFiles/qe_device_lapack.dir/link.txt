@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libqe_device_lapack.a CMakeFiles/qe_device_lapack.dir/device_helper.f90.o
+/usr/bin/ranlib ../lib/libqe_device_lapack.a

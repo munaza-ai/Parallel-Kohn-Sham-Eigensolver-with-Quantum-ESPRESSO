@@ -1,0 +1,14 @@
+&control
+  calculation = 'scf'
+  prefix = 'cb_test'
+/
+&system
+  ibrav = 2
+  celldm(1) = 10.20
+  nat = 2
+  ntyp = 1
+  ecutwfc = 20
+/
+&electrons
+  diagonalization = 'davidson'
+/
