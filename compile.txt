@@ -1,11 +1,24 @@
-cmake .. \
-  -DQE_ENABLE_MPI=ON \
-  -DQE_FFTW_VENDOR=Intel_FFTW3 \
-  -DQE_ENABLE_SCALAPACK=ON \
-  -DBLA_VENDOR=Intel10_64lp \
-  -DCMAKE_Fortran_COMPILER=ifx \
-  -DCMAKE_C_COMPILER=icx \
-  -DCMAKE_CXX_COMPILER=icpx
-make
+module purge
+module load intel-oneapi-mkl
+module load nvhpc
+module load hpcx-mpi
+
+# Keep compile and link on the same CUDA toolkit to avoid nvlink "newer than toolkit" errors.
+NVF=$(which nvfortran)
+NVHPC_ROOT=$(dirname "$(dirname "$(dirname "$NVF")")")
+export NVHPC_CUDA_HOME="$NVHPC_ROOT/cuda/12.4"
+export CUDA_HOME="$NVHPC_CUDA_HOME"
+
+cmake -S . -B build_gpu \
+	-DQE_ENABLE_CUDA=on \
+	-DQE_ENABLE_OPENMP=off \
+	-DCMAKE_C_COMPILER=nvc \
+	-DCMAKE_Fortran_COMPILER=nvfortran \
+	-DCMAKE_C_FLAGS="-gpu=cuda12.4" \
+	-DCMAKE_Fortran_FLAGS="-gpu=cuda12.4" \
+	-DCMAKE_BUILD_TYPE=Release
+
+cmake --build build_gpu --target clean
+cmake --build build_gpu -j32
 
 

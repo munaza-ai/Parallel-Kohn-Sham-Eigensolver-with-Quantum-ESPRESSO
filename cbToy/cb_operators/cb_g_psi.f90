@@ -3,6 +3,9 @@
 ! global variables
   USE cb_module, ONLY : DP
   USE cb_module, ONLY : ekin
+#if defined(_OPENACC)
+  USE openacc
+#endif
   implicit none
 ! input variables
   integer, intent(IN) :: npwx, npw, nvec, npol
@@ -13,23 +16,14 @@
   real(DP) :: x, denm
   
   call start_clock('g_psi')
-  
-  ! OpenACC: Mark arrays as present on device
-  !$acc data present(ekin) deviceptr(eig, psi)
-  
-  !$acc parallel loop
+  !$acc parallel loop collapse(2) deviceptr(eig, psi) present(ekin)
   do ivec = 1, nvec
-     !$acc loop vector
      do ig = 1, npw
         x = (ekin(ig) - eig(ivec))
         denm = 0.5_dp*(1.d0+x+sqrt(1.d0+(x-1)*(x-1.d0)))
         psi (ig, ivec) = psi (ig, ivec) / denm
      enddo
   enddo
-  
-  !$acc end parallel loop
-  !$acc end data
-  
   call stop_clock('g_psi')
 
  end subroutine cb_g_psi
@@ -39,6 +33,9 @@
 ! global variables
   USE cb_module, ONLY : DP
   USE cb_module, ONLY : ekin
+#if defined(_OPENACC)
+  USE openacc
+#endif
   implicit none
 ! input variables
   integer, intent(IN) :: npwx, npw
@@ -49,6 +46,7 @@
   real(DP) :: x, denm
   
   call start_clock('g_1psi')
+  !$acc parallel loop present(psi, ekin)
   do ig = 1, npw
      x = (ekin(ig) - eig)
      denm = 0.5_dp*(1.d0+x+sqrt(1.d0+(x-1)*(x-1.d0)))

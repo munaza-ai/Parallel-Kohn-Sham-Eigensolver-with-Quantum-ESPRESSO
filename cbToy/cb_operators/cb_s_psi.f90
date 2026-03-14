@@ -65,25 +65,32 @@ END SUBROUTINE cb_s_psi
 ! global variables
   USE cb_module, only : DP
   USE cb_module, only : use_overlap, ekin
+#if defined(_OPENACC)
+  USE openacc
+#endif
   implicit none
 ! input variables
   integer, intent(IN) :: npwx, npw, nvec
   complex(DP),intent(IN) :: psi(npwx,nvec)
   complex(DP),intent(OUT) :: spsi(npwx,nvec)
 ! local variables
-  integer :: ivec
+  integer :: ivec, ig
 
 ! for each input wfc spsi is just psi
   if (.not.use_overlap) then
-     !$acc kernels present(psi, spsi)
-     spsi(:,:) = psi(:,:)
-     !$acc end kernels
-  else
-     !$acc parallel loop vector present(psi, spsi, ekin)
+     !$acc parallel loop collapse(2) present(spsi, psi)
      do ivec=1,nvec
-        spsi(1:npw,ivec) = (1.d0 + exp(-ekin(1:npw)))**2 * psi(1:npw,ivec)
+        do ig=1,npwx
+           spsi(ig,ivec) = psi(ig,ivec)
+        end do
      end do
-     !$acc end parallel loop
+  else
+     !$acc parallel loop collapse(2) present(spsi, psi, ekin)
+     do ivec=1,nvec
+        do ig=1,npw
+           spsi(ig,ivec) = (1.d0 + exp(-ekin(ig)))**2 * psi(ig,ivec)
+        end do
+     end do
   end if
 
  end subroutine cb_s_psi_

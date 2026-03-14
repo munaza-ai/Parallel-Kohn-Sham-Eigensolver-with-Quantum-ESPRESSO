@@ -1,0 +1,463 @@
+The system is: Linux - 4.18.0-477.27.1.el8_8.x86_64 - x86_64
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5
+Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/fort1 CMakeFortranCompilerId.F -opt 1 -nostatic -x 19 0x400000 -quad -x 59 4 -x 15 2 -x 49 0x400004 -x 51 0x20 -x 57 0x4c -x 58 0x10000 -x 124 0x1000 -tp icelake-server -x 57 0xfb0000 -x 58 0x78031040 -x 47 0x08 -x 48 4608 -x 49 0x100 -stdinc /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include:/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include-stdexec:/usr/lib/gcc/x86_64-redhat-linux/8/include:/usr/local/include:/usr/include -cmdline '+nvfortran CMakeFortranCompilerId.F -v' -def __unix -def __unix__ -def unix -def linux -def __linux -def __linux__ -def __NO_MATH_INLINES -def __LP64__ -def __x86_64 -def __x86_64__ -def __LONG_MAX__=9223372036854775807L -def '__SIZE_TYPE__=unsigned long int' -def '__PTRDIFF_TYPE__=long int' -def __amd64 -def __amd64__ -def __k8 -def __k8__ -def __MMX__ -def __SSE_MATH__ -def __MMX_WITH_SSE__ -def __SSE__ -def __SSE2__ -def __SSE2_MATH__ -def __SSE3__ -def __SSSE3__ -def __SSE4_1__ -def __SSE4_2__ -def __ABM__ -def __ADX__ -def __AES__ -def __AVX__ -def __AVX2__ -def __AVX512BITALG__ -def __AVX512BW__ -def __AVX512CD__ -def __AVX512DQ__ -def __AVX512F__ -def __AVX512IFMA__ -def __AVX512VBMI__ -def __AVX512VBMI2__ -def __AVX512VL__ -def __AVX512VNNI__ -def __AVX512VPOPCNTDQ__ -def __BMI__ -def __BMI2__ -def __CLFLUSHOPT__ -def __CLWB__ -def __CX16__ -def __F16C__ -def __FMA__ -def __FSGSBASE__ -def __FXSR__ -def __GFNI__ -def __LZCNT__ -def __MOVBE__ -def __PCLMUL__ -def __PCONFIG__ -def __PKU__ -def __POPCNT__ -def __PRFCHW__ -def __RDPID__ -def __RDRND__ -def __RDSEED__ -def __LAHF_SAHF__ -def __SGX__ -def __SHA__ -def __VAES__ -def __VPCLMULQDQ__ -def __WBNOINVD__ -def __XSAVE__ -def __XSAVEC__ -def __XSAVEOPT__ -def __XSAVES__ -def __PGLLVM__ -def __NVCOMPILER_LLVM__ -def __extension__= -def __NVCOMPILER_GPU_SEPARATE_MEM -preprocess -nofreeform -vect 48 -x 54 1 -x 68 0x1 -x 70 0x40000000 -x 70 0x40000000 -x 68 0x1 -x 124 1 -x 195 0x8000 -y 163 0xc0000000 -x 189 0x10 -stbfile /scratch_local/nvfortranHre_jJrH2rm0-.stb -modexport /scratch_local/nvfortranPre_j7Dl-wH1F.cmod -modindex /scratch_local/nvfortranXre_jtnhXKFIR.cmdx -cci /scratch_local/nvfortranzre_jlqh9IhI5.cci -output /scratch_local/nvfortranrre_jZbV6zYAp.ilm
+  0 inform,   0 warnings,   0 severes, 0 fatal for cmakefortrancompilerid
+NVFORTRAN/x86-64 Linux 24.5-1: compilation successful
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/fort2 /scratch_local/nvfortranrre_jZbV6zYAp.ilm -fn CMakeFortranCompilerId.F -opt 1 -x 51 0x20 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp icelake-server -x 120 0x1000 -x 124 0x1400 -y 15 2 -x 57 0x3b0000 -x 58 0x48000000 -x 49 0x100 -astype 0 -x 121 1 -x 183 4 -x 121 0x800 -x 68 0x1 -x 8 0x40000000 -x 70 0x40000000 -x 56 0x10 -x 54 0x10 -x 249 170 -x 68 0x20 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -x 124 1 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -cci /scratch_local/nvfortranzre_jlqh9IhI5.cci -cmdline '+nvfortran CMakeFortranCompilerId.F -v' -stbfile /scratch_local/nvfortranHre_jJrH2rm0-.stb -asm /scratch_local/nvfortranbre_jd1hlK6GX.ll
+  0 inform,   0 warnings,   0 severes, 0 fatal for cmakefortrancompilerid
+NVFORTRAN/x86-64 Linux 24.5-1: compilation successful
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /scratch_local/nvfortranbre_jd1hlK6GX.ll -march=x86-64 -mcpu=native -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+avx512f -mattr=+avx512cd -mattr=+avx512vl -mattr=+avx512bw -mattr=+avx512dq -mattr=+avx512ifma -mattr=+avx512vbmi -mattr=+avx512vbmi2 -mattr=+avx512bitalg -mattr=+avx512vpopcntdq -mattr=+avx512vnni -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+pku -mattr=+gfni -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+cx16 -mattr=+movbe -mattr=+pconfig -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+sgx -mattr=+wbnoinvd -O1 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o /scratch_local/nvfortranjre_jBDMieXeZ.o
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/append -noerror /scratch_local/nvfortranjre_jBDMieXeZ.o -name .IPDINFO /scratch_local/nvfortranPre_j7Dl-wH1F.cmod -name .IPEINFO /scratch_local/nvfortranXre_jtnhXKFIR.cmdx
+
+/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/f90main.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/nvhpc.ld -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/ -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/ /scratch_local/nvfortranjre_jBDMieXeZ.o -rpath /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64 -lnvf -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib/gcc/x86_64-redhat-linux/8//crtend.o /usr/lib64/crtn.o
+Unlinking /scratch_local/nvfortranrre_jZbV6zYAp.ilm
+Unlinking /scratch_local/nvfortranzre_jlqh9IhI5.cci
+Unlinking /scratch_local/nvfortranHre_jJrH2rm0-.stb
+Unlinking /scratch_local/nvfortranPre_j7Dl-wH1F.cmod
+Unlinking /scratch_local/nvfortranXre_jtnhXKFIR.cmdx
+Unlinking /scratch_local/nvfortran5re_jR3G22c1D.s
+Unlinking /scratch_local/nvfortranbre_jd1hlK6GX.ll
+Unlinking /scratch_local/nvfortranjre_jBDMieXeZ.o
+Unlinking /scratch_local/nvfortranrre_jZi6vPW5n.llvm
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is NVHPC, found in "/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/3.20.2/CompilerIdFortran/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is NVHPC, found in "/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/3.20.2/CompilerIdC/a.out"
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ee6ac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ee6ac.dir/build.make CMakeFiles/cmTC_ee6ac.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran   -v -c /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o
+Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5
+Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/fort1 /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -opt 1 -nostatic -x 19 0x400000 -quad -x 59 4 -x 15 2 -x 49 0x400004 -x 51 0x20 -x 57 0x4c -x 58 0x10000 -x 124 0x1000 -tp icelake-server -x 57 0xfb0000 -x 58 0x78031040 -x 47 0x08 -x 48 4608 -x 49 0x100 -stdinc /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include:/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include-stdexec:/usr/lib/gcc/x86_64-redhat-linux/8/include:/usr/local/include:/usr/include -cmdline '+nvfortran /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -v -c -o CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o' -def __unix -def __unix__ -def unix -def linux -def __linux -def __linux__ -def __NO_MATH_INLINES -def __LP64__ -def __x86_64 -def __x86_64__ -def __LONG_MAX__=9223372036854775807L -def '__SIZE_TYPE__=unsigned long int' -def '__PTRDIFF_TYPE__=long int' -def __amd64 -def __amd64__ -def __k8 -def __k8__ -def __MMX__ -def __SSE_MATH__ -def __MMX_WITH_SSE__ -def __SSE__ -def __SSE2__ -def __SSE2_MATH__ -def __SSE3__ -def __SSSE3__ -def __SSE4_1__ -def __SSE4_2__ -def __ABM__ -def __ADX__ -def __AES__ -def __AVX__ -def __AVX2__ -def __AVX512BITALG__ -def __AVX512BW__ -def __AVX512CD__ -def __AVX512DQ__ -def __AVX512F__ -def __AVX512IFMA__ -def __AVX512VBMI__ -def __AVX512VBMI2__ -def __AVX512VL__ -def __AVX512VNNI__ -def __AVX512VPOPCNTDQ__ -def __BMI__ -def __BMI2__ -def __CLFLUSHOPT__ -def __CLWB__ -def __CX16__ -def __F16C__ -def __FMA__ -def __FSGSBASE__ -def __FXSR__ -def __GFNI__ -def __LZCNT__ -def __MOVBE__ -def __PCLMUL__ -def __PCONFIG__ -def __PKU__ -def __POPCNT__ -def __PRFCHW__ -def __RDPID__ -def __RDRND__ -def __RDSEED__ -def __LAHF_SAHF__ -def __SGX__ -def __SHA__ -def __VAES__ -def __VPCLMULQDQ__ -def __WBNOINVD__ -def __XSAVE__ -def __XSAVEC__ -def __XSAVEOPT__ -def __XSAVES__ -def __PGLLVM__ -def __NVCOMPILER_LLVM__ -def __extension__= -def __NVCOMPILER_GPU_SEPARATE_MEM -preprocess -nofreeform -vect 48 -x 54 1 -x 68 0x1 -x 70 0x40000000 -x 70 0x40000000 -x 68 0x1 -x 124 1 -x 195 0x8000 -y 163 0xc0000000 -x 189 0x10 -stbfile /scratch_local/nvfortransYe_j2mw9QpPb.stb -modexport /scratch_local/nvfortranIYe_jMZh5CW8G.cmod -modindex /scratch_local/nvfortranYYe_jwqgBPB5s.cmdx -cci /scratch_local/nvfortrancYe_jgSqIETzS.cci -output /scratch_local/nvfortranYYe_jwHSdtnUK.ilm
+  0 inform,   0 warnings,   0 severes, 0 fatal for cmakefortrancompilerabi
+NVFORTRAN/x86-64 Linux 24.5-1: compilation successful
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/fort2 /scratch_local/nvfortranYYe_jwHSdtnUK.ilm -fn /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -opt 1 -x 51 0x20 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp icelake-server -x 120 0x1000 -x 124 0x1400 -y 15 2 -x 57 0x3b0000 -x 58 0x48000000 -x 49 0x100 -astype 0 -x 121 1 -x 183 4 -x 121 0x800 -x 68 0x1 -x 8 0x40000000 -x 70 0x40000000 -x 56 0x10 -x 54 0x10 -x 249 170 -x 68 0x20 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -x 124 1 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -cci /scratch_local/nvfortrancYe_jgSqIETzS.cci -cmdline '+nvfortran /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -v -c -o CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o' -stbfile /scratch_local/nvfortransYe_j2mw9QpPb.stb -asm /scratch_local/nvfortransYe_j2R6KiuBO.ll
+  0 inform,   0 warnings,   0 severes, 0 fatal for cmakefortrancompilerabi
+NVFORTRAN/x86-64 Linux 24.5-1: compilation successful
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /scratch_local/nvfortransYe_j2R6KiuBO.ll -march=x86-64 -mcpu=native -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+avx512f -mattr=+avx512cd -mattr=+avx512vl -mattr=+avx512bw -mattr=+avx512dq -mattr=+avx512ifma -mattr=+avx512vbmi -mattr=+avx512vbmi2 -mattr=+avx512bitalg -mattr=+avx512vpopcntdq -mattr=+avx512vnni -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+pku -mattr=+gfni -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+cx16 -mattr=+movbe -mattr=+pconfig -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+sgx -mattr=+wbnoinvd -O1 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/append -noerror CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o -name .IPDINFO /scratch_local/nvfortranIYe_jMZh5CW8G.cmod -name .IPEINFO /scratch_local/nvfortranYYe_jwqgBPB5s.cmdx
+Unlinking /scratch_local/nvfortranYYe_jwHSdtnUK.ilm
+Unlinking /scratch_local/nvfortrancYe_jgSqIETzS.cci
+Unlinking /scratch_local/nvfortransYe_j2mw9QpPb.stb
+Unlinking /scratch_local/nvfortranIYe_jMZh5CW8G.cmod
+Unlinking /scratch_local/nvfortranYYe_jwqgBPB5s.cmdx
+Unlinking /scratch_local/nvfortrancYe_jgt4u_Ud0.s
+Unlinking /scratch_local/nvfortransYe_j2R6KiuBO.ll
+Unlinking /scratch_local/nvfortranIYe_jMkq9TdBL.llvm
+Linking Fortran executable cmTC_ee6ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee6ac.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran  -v CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o -o cmTC_ee6ac 
+Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5
+Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy
+
+/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/f90main.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/nvhpc.ld -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/ -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/ CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o -rpath /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -o cmTC_ee6ac -L/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64 -lnvf -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib/gcc/x86_64-redhat-linux/8//crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=start
+  warn: unable to parse implicit include dirs!
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ee6ac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ee6ac.dir/build.make CMakeFiles/cmTC_ee6ac.dir/build]
+  ignore line: [gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp']
+  ignore line: [Building Fortran object CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran   -v -c /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5]
+  ignore line: [Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy]
+  ignore line: []
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/fort1 /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -opt 1 -nostatic -x 19 0x400000 -quad -x 59 4 -x 15 2 -x 49 0x400004 -x 51 0x20 -x 57 0x4c -x 58 0x10000 -x 124 0x1000 -tp icelake-server -x 57 0xfb0000 -x 58 0x78031040 -x 47 0x08 -x 48 4608 -x 49 0x100 -stdinc /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include:/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include-stdexec:/usr/lib/gcc/x86_64-redhat-linux/8/include:/usr/local/include:/usr/include -cmdline '+nvfortran /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -v -c -o CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o' -def __unix -def __unix__ -def unix -def linux -def __linux -def __linux__ -def __NO_MATH_INLINES -def __LP64__ -def __x86_64 -def __x86_64__ -def __LONG_MAX__=9223372036854775807L -def '__SIZE_TYPE__=unsigned long int' -def '__PTRDIFF_TYPE__=long int' -def __amd64 -def __amd64__ -def __k8 -def __k8__ -def __MMX__ -def __SSE_MATH__ -def __MMX_WITH_SSE__ -def __SSE__ -def __SSE2__ -def __SSE2_MATH__ -def __SSE3__ -def __SSSE3__ -def __SSE4_1__ -def __SSE4_2__ -def __ABM__ -def __ADX__ -def __AES__ -def __AVX__ -def __AVX2__ -def __AVX512BITALG__ -def __AVX512BW__ -def __AVX512CD__ -def __AVX512DQ__ -def __AVX512F__ -def __AVX512IFMA__ -def __AVX512VBMI__ -def __AVX512VBMI2__ -def __AVX512VL__ -def __AVX512VNNI__ -def __AVX512VPOPCNTDQ__ -def __BMI__ -def __BMI2__ -def __CLFLUSHOPT__ -def __CLWB__ -def __CX16__ -def __F16C__ -def __FMA__ -def __FSGSBASE__ -def __FXSR__ -def __GFNI__ -def __LZCNT__ -def __MOVBE__ -def __PCLMUL__ -def __PCONFIG__ -def __PKU__ -def __POPCNT__ -def __PRFCHW__ -def __RDPID__ -def __RDRND__ -def __RDSEED__ -def __LAHF_SAHF__ -def __SGX__ -def __SHA__ -def __VAES__ -def __VPCLMULQDQ__ -def __WBNOINVD__ -def __XSAVE__ -def __XSAVEC__ -def __XSAVEOPT__ -def __XSAVES__ -def __PGLLVM__ -def __NVCOMPILER_LLVM__ -def __extension__= -def __NVCOMPILER_GPU_SEPARATE_MEM -preprocess -nofreeform -vect 48 -x 54 1 -x 68 0x1 -x 70 0x40000000 -x 70 0x40000000 -x 68 0x1 -x 124 1 -x 195 0x8000 -y 163 0xc0000000 -x 189 0x10 -stbfile /scratch_local/nvfortransYe_j2mw9QpPb.stb -modexport /scratch_local/nvfortranIYe_jMZh5CW8G.cmod -modindex /scratch_local/nvfortranYYe_jwqgBPB5s.cmdx -cci /scratch_local/nvfortrancYe_jgSqIETzS.cci -output /scratch_local/nvfortranYYe_jwHSdtnUK.ilm]
+  ignore line: [  0 inform    0 warnings    0 severes  0 fatal for cmakefortrancompilerabi]
+  ignore line: [NVFORTRAN/x86-64 Linux 24.5-1: compilation successful]
+  ignore line: []
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/fort2 /scratch_local/nvfortranYYe_jwHSdtnUK.ilm -fn /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -opt 1 -x 51 0x20 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp icelake-server -x 120 0x1000 -x 124 0x1400 -y 15 2 -x 57 0x3b0000 -x 58 0x48000000 -x 49 0x100 -astype 0 -x 121 1 -x 183 4 -x 121 0x800 -x 68 0x1 -x 8 0x40000000 -x 70 0x40000000 -x 56 0x10 -x 54 0x10 -x 249 170 -x 68 0x20 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -x 124 1 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -cci /scratch_local/nvfortrancYe_jgSqIETzS.cci -cmdline '+nvfortran /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -v -c -o CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o' -stbfile /scratch_local/nvfortransYe_j2mw9QpPb.stb -asm /scratch_local/nvfortransYe_j2R6KiuBO.ll]
+  ignore line: [  0 inform    0 warnings    0 severes  0 fatal for cmakefortrancompilerabi]
+  ignore line: [NVFORTRAN/x86-64 Linux 24.5-1: compilation successful]
+  ignore line: []
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /scratch_local/nvfortransYe_j2R6KiuBO.ll -march=x86-64 -mcpu=native -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+avx512f -mattr=+avx512cd -mattr=+avx512vl -mattr=+avx512bw -mattr=+avx512dq -mattr=+avx512ifma -mattr=+avx512vbmi -mattr=+avx512vbmi2 -mattr=+avx512bitalg -mattr=+avx512vpopcntdq -mattr=+avx512vnni -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+pku -mattr=+gfni -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+cx16 -mattr=+movbe -mattr=+pconfig -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+sgx -mattr=+wbnoinvd -O1 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: []
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/append -noerror CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o -name .IPDINFO /scratch_local/nvfortranIYe_jMZh5CW8G.cmod -name .IPEINFO /scratch_local/nvfortranYYe_jwqgBPB5s.cmdx]
+  ignore line: [Unlinking /scratch_local/nvfortranYYe_jwHSdtnUK.ilm]
+  ignore line: [Unlinking /scratch_local/nvfortrancYe_jgSqIETzS.cci]
+  ignore line: [Unlinking /scratch_local/nvfortransYe_j2mw9QpPb.stb]
+  ignore line: [Unlinking /scratch_local/nvfortranIYe_jMZh5CW8G.cmod]
+  ignore line: [Unlinking /scratch_local/nvfortranYYe_jwqgBPB5s.cmdx]
+  ignore line: [Unlinking /scratch_local/nvfortrancYe_jgt4u_Ud0.s]
+  ignore line: [Unlinking /scratch_local/nvfortransYe_j2R6KiuBO.ll]
+  ignore line: [Unlinking /scratch_local/nvfortranIYe_jMkq9TdBL.llvm]
+  ignore line: [Linking Fortran executable cmTC_ee6ac]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee6ac.dir/link.txt --verbose=1]
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran  -v CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o -o cmTC_ee6ac ]
+  ignore line: [Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5]
+  ignore line: [Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy]
+  ignore line: []
+  link line: [/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/f90main.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/nvhpc.ld -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/ -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/ CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o -rpath /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -o cmTC_ee6ac -L/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64 -lnvf -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib/gcc/x86_64-redhat-linux/8//crtend.o /usr/lib64/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> obj [/usr/lib64/crt1.o]
+    arg [/usr/lib64/crti.o] ==> obj [/usr/lib64/crti.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o]
+    arg [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/f90main.o] ==> obj [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/f90main.o]
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-T] ==> ignore
+    arg [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/nvhpc.ld] ==> ignore
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib]
+    arg [-L/leonardo/home/userexternal/gpeddeun/.local/lib] ==> dir [/leonardo/home/userexternal/gpeddeun/.local/lib]
+    arg [-L/leonardo/home/userexternal/gpeddeun/.local/lib] ==> dir [/leonardo/home/userexternal/gpeddeun/.local/lib]
+    arg [-L/leonardo/home/userexternal/gpeddeun/.local/lib] ==> dir [/leonardo/home/userexternal/gpeddeun/.local/lib]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/]
+    arg [CMakeFiles/cmTC_ee6ac.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_ee6ac] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64]
+    arg [-lnvf] ==> lib [nvf]
+    arg [-lnvomp] ==> lib [nvomp]
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lnvhpcatm] ==> lib [nvhpcatm]
+    arg [-latomic] ==> lib [atomic]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lnvcpumath] ==> lib [nvcpumath]
+    arg [-lnsnvc] ==> lib [nsnvc]
+    arg [-lnvc] ==> lib [nvc]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lm] ==> lib [m]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8//crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8//crtend.o]
+    arg [/usr/lib64/crtn.o] ==> obj [/usr/lib64/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8//crtend.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/lib/intel64/gcc4.8]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib]
+  collapse library dir [/leonardo/home/userexternal/gpeddeun/.local/lib] ==> [/leonardo/home/userexternal/gpeddeun/.local/lib]
+  collapse library dir [/leonardo/home/userexternal/gpeddeun/.local/lib] ==> [/leonardo/home/userexternal/gpeddeun/.local/lib]
+  collapse library dir [/leonardo/home/userexternal/gpeddeun/.local/lib] ==> [/leonardo/home/userexternal/gpeddeun/.local/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64] ==> [/usr/lib64]
+  implicit libs: [nvf;nvomp;dl;nvhpcatm;atomic;pthread;nvcpumath;nsnvc;nvc;rt;pthread;gcc;c;gcc_s;m]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/f90main.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/lib/intel64/gcc4.8;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib;/leonardo/home/userexternal/gpeddeun/.local/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/8]
+  implicit fwks: []
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d0c14/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d0c14.dir/build.make CMakeFiles/cmTC_d0c14.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_d0c14.dir/testFortranCompilerF90.f90.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran    -c /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTC_d0c14.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTC_d0c14
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0c14.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran CMakeFiles/cmTC_d0c14.dir/testFortranCompilerF90.f90.o -o cmTC_d0c14 
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c4f39/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c4f39.dir/build.make CMakeFiles/cmTC_c4f39.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc   -v -o CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5
+Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=8 -D__GNUC_MINOR__=5 -D__GNUC_PATCHLEVEL__=0 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__ABM__ -D__ADX__ -D__AES__ -D__AVX__ -D__AVX2__ -D__AVX512BITALG__ -D__AVX512BW__ -D__AVX512CD__ -D__AVX512DQ__ -D__AVX512F__ -D__AVX512IFMA__ -D__AVX512VBMI__ -D__AVX512VBMI2__ -D__AVX512VL__ -D__AVX512VNNI__ -D__AVX512VPOPCNTDQ__ -D__BMI__ -D__BMI2__ -D__CLFLUSHOPT__ -D__CLWB__ -D__CX16__ -D__F16C__ -D__FMA__ -D__FSGSBASE__ -D__FXSR__ -D__GFNI__ -D__LZCNT__ -D__MOVBE__ -D__PCLMUL__ -D__PCONFIG__ -D__PKU__ -D__POPCNT__ -D__PRFCHW__ -D__RDPID__ -D__RDRND__ -D__RDSEED__ -D__LAHF_SAHF__ -D__SGX__ -D__SHA__ -D__VAES__ -D__VPCLMULQDQ__ -D__WBNOINVD__ -D__XSAVE__ -D__XSAVEC__ -D__XSAVEOPT__ -D__XSAVES__ -D__PGI -D__NVCOMPILER -D_PGCG_SOURCE --c -I- -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/math_libs/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/nccl/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/nvshmem/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/extras/qd/include/qd -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/include --sys_include /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/include --sys_include /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include --sys_include /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /usr/lib/gcc/x86_64-redhat-linux/8/include --sys_include /usr/local/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=80500 -D__pgnu_vsn=80500 --no_fixed_bp -q -o /scratch_local/nvcKng_jSD6IYguh.il /usr/share/cmake/Modules/CMakeCCompilerABI.c -- /usr/share/cmake/Modules/CMakeCCompilerABI.c -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp icelake-server -x 120 0x1000 -astype 0 -x 121 1 -fn /usr/share/cmake/Modules/CMakeCCompilerABI.c -il /scratch_local/nvcKng_jSD6IYguh.il -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 209 0x10 -x 119 0x20 -def __pgnu_vsn=80500 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 122 0x400000 -y 125 0x100000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -gnuvsn 80500 -x 69 0x200 -x 123 0x400 -cmdline '+nvc /usr/share/cmake/Modules/CMakeCCompilerABI.c -v -o CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o -c' -asm /scratch_local/nvcKng_jSK-VAXfE.ll
+NVC++/x86-64 Linux 24.5-1: compilation successful
+
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /scratch_local/nvcKng_jSK-VAXfE.ll -march=x86-64 -mcpu=native -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+avx512f -mattr=+avx512cd -mattr=+avx512vl -mattr=+avx512bw -mattr=+avx512dq -mattr=+avx512ifma -mattr=+avx512vbmi -mattr=+avx512vbmi2 -mattr=+avx512bitalg -mattr=+avx512vpopcntdq -mattr=+avx512vnni -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+pku -mattr=+gfni -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+cx16 -mattr=+movbe -mattr=+pconfig -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+sgx -mattr=+wbnoinvd -O1 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o
+Unlinking /scratch_local/nvcKng_jSD6IYguh.il
+Unlinking /scratch_local/nvceng_jmloCc_rd.s
+Unlinking /scratch_local/nvcKng_jSK-VAXfE.ll
+Unlinking /scratch_local/nvceng_jmk8Xntp8.llvm
+Linking C executable cmTC_c4f39
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4f39.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc  -v CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o -o cmTC_c4f39 
+Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5
+Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy
+
+/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/nvhpc.ld -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/ -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/ CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o -rpath /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -o cmTC_c4f39 -L/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64 -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lgcc -lc -lgcc_s -lm /usr/lib/gcc/x86_64-redhat-linux/8//crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=start
+  warn: unable to parse implicit include dirs!
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c4f39/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c4f39.dir/build.make CMakeFiles/cmTC_c4f39.dir/build]
+  ignore line: [gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc   -v -o CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5]
+  ignore line: [Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy]
+  ignore line: []
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=8 -D__GNUC_MINOR__=5 -D__GNUC_PATCHLEVEL__=0 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__ABM__ -D__ADX__ -D__AES__ -D__AVX__ -D__AVX2__ -D__AVX512BITALG__ -D__AVX512BW__ -D__AVX512CD__ -D__AVX512DQ__ -D__AVX512F__ -D__AVX512IFMA__ -D__AVX512VBMI__ -D__AVX512VBMI2__ -D__AVX512VL__ -D__AVX512VNNI__ -D__AVX512VPOPCNTDQ__ -D__BMI__ -D__BMI2__ -D__CLFLUSHOPT__ -D__CLWB__ -D__CX16__ -D__F16C__ -D__FMA__ -D__FSGSBASE__ -D__FXSR__ -D__GFNI__ -D__LZCNT__ -D__MOVBE__ -D__PCLMUL__ -D__PCONFIG__ -D__PKU__ -D__POPCNT__ -D__PRFCHW__ -D__RDPID__ -D__RDRND__ -D__RDSEED__ -D__LAHF_SAHF__ -D__SGX__ -D__SHA__ -D__VAES__ -D__VPCLMULQDQ__ -D__WBNOINVD__ -D__XSAVE__ -D__XSAVEC__ -D__XSAVEOPT__ -D__XSAVES__ -D__PGI -D__NVCOMPILER -D_PGCG_SOURCE --c -I- -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/math_libs/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/nccl/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/nvshmem/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/extras/qd/include/qd -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../include -I/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/include --sys_include /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/include --sys_include /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include --sys_include /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /usr/lib/gcc/x86_64-redhat-linux/8/include --sys_include /usr/local/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=80500 -D__pgnu_vsn=80500 --no_fixed_bp -q -o /scratch_local/nvcKng_jSD6IYguh.il /usr/share/cmake/Modules/CMakeCCompilerABI.c -- /usr/share/cmake/Modules/CMakeCCompilerABI.c -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp icelake-server -x 120 0x1000 -astype 0 -x 121 1 -fn /usr/share/cmake/Modules/CMakeCCompilerABI.c -il /scratch_local/nvcKng_jSD6IYguh.il -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 209 0x10 -x 119 0x20 -def __pgnu_vsn=80500 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 122 0x400000 -y 125 0x100000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -gnuvsn 80500 -x 69 0x200 -x 123 0x400 -cmdline '+nvc /usr/share/cmake/Modules/CMakeCCompilerABI.c -v -o CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o -c' -asm /scratch_local/nvcKng_jSK-VAXfE.ll]
+  ignore line: [NVC++/x86-64 Linux 24.5-1: compilation successful]
+  ignore line: []
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /scratch_local/nvcKng_jSK-VAXfE.ll -march=x86-64 -mcpu=native -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+avx512f -mattr=+avx512cd -mattr=+avx512vl -mattr=+avx512bw -mattr=+avx512dq -mattr=+avx512ifma -mattr=+avx512vbmi -mattr=+avx512vbmi2 -mattr=+avx512bitalg -mattr=+avx512vpopcntdq -mattr=+avx512vnni -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+pku -mattr=+gfni -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+cx16 -mattr=+movbe -mattr=+pconfig -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+sgx -mattr=+wbnoinvd -O1 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Unlinking /scratch_local/nvcKng_jSD6IYguh.il]
+  ignore line: [Unlinking /scratch_local/nvceng_jmloCc_rd.s]
+  ignore line: [Unlinking /scratch_local/nvcKng_jSK-VAXfE.ll]
+  ignore line: [Unlinking /scratch_local/nvceng_jmk8Xntp8.llvm]
+  ignore line: [Linking C executable cmTC_c4f39]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4f39.dir/link.txt --verbose=1]
+  ignore line: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc  -v CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o -o cmTC_c4f39 ]
+  ignore line: [Export NVCOMPILER=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5]
+  ignore line: [Export PGI=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy]
+  ignore line: []
+  link line: [/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/nvhpc.ld -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/ -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/home/userexternal/gpeddeun/.local/lib -L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/ CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o -rpath /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib -o cmTC_c4f39 -L/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64 -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lgcc -lc -lgcc_s -lm /usr/lib/gcc/x86_64-redhat-linux/8//crtend.o /usr/lib64/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> obj [/usr/lib64/crt1.o]
+    arg [/usr/lib64/crti.o] ==> obj [/usr/lib64/crti.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o]
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-T] ==> ignore
+    arg [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib/nvhpc.ld] ==> ignore
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib]
+    arg [-L/leonardo/home/userexternal/gpeddeun/.local/lib] ==> dir [/leonardo/home/userexternal/gpeddeun/.local/lib]
+    arg [-L/leonardo/home/userexternal/gpeddeun/.local/lib] ==> dir [/leonardo/home/userexternal/gpeddeun/.local/lib]
+    arg [-L/leonardo/home/userexternal/gpeddeun/.local/lib] ==> dir [/leonardo/home/userexternal/gpeddeun/.local/lib]
+    arg [-L/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/]
+    arg [CMakeFiles/cmTC_c4f39.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c4f39] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64]
+    arg [-lnvomp] ==> lib [nvomp]
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lnvhpcatm] ==> lib [nvhpcatm]
+    arg [-latomic] ==> lib [atomic]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lnvcpumath] ==> lib [nvcpumath]
+    arg [-lnsnvc] ==> lib [nsnvc]
+    arg [-lnvc] ==> lib [nvc]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lm] ==> lib [m]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8//crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8//crtend.o]
+    arg [/usr/lib64/crtn.o] ==> obj [/usr/lib64/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8//crtbegin.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8//crtend.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/env/../lib/intel64/gcc4.8] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/lib/intel64/gcc4.8]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib]
+  collapse library dir [/leonardo/home/userexternal/gpeddeun/.local/lib] ==> [/leonardo/home/userexternal/gpeddeun/.local/lib]
+  collapse library dir [/leonardo/home/userexternal/gpeddeun/.local/lib] ==> [/leonardo/home/userexternal/gpeddeun/.local/lib]
+  collapse library dir [/leonardo/home/userexternal/gpeddeun/.local/lib] ==> [/leonardo/home/userexternal/gpeddeun/.local/lib]
+  collapse library dir [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib] ==> [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8//../../../../lib64] ==> [/usr/lib64]
+  implicit libs: [nvomp;dl;nvhpcatm;atomic;pthread;nvcpumath;nsnvc;nvc;gcc;c;gcc_s;m]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ucx/mt/lib;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/comm_libs/12.4/hpcx/hpcx-2.19/ompi/lib;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/lib;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-tbb-2021.12.0-w4a57mvfeegdx4kymfajl5aio3kfhnnq/tbb/2021.12/lib/intel64/gcc4.8;/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mpi-2021.12.1-s5hpfy2ffuow455bu7uzjbfizbfq3znr/mpi/2021.12/lib;/leonardo/home/userexternal/gpeddeun/.local/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/8]
+  implicit fwks: []
+
+
+Performing Fortran SOURCE FILE Test Fortran_ISYSTEM_SUPPORTED succeeded with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_51669/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_51669.dir/build.make CMakeFiles/cmTC_51669.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_51669.dir/src.F90.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran -DFortran_ISYSTEM_SUPPORTED  -isystem . -c /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp/src.F90 -o CMakeFiles/cmTC_51669.dir/src.F90.o
+Linking Fortran executable cmTC_51669
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51669.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran CMakeFiles/cmTC_51669.dir/src.F90.o -o cmTC_51669 
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+       program test
+       stop
+       end program
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4e0c6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4e0c6.dir/build.make CMakeFiles/cmTC_4e0c6.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e0c6.dir/CheckIncludeFile.c.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc   -c11 -o CMakeFiles/cmTC_4e0c6.dir/CheckIncludeFile.c.o -c /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4e0c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e0c6.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc CMakeFiles/cmTC_4e0c6.dir/CheckIncludeFile.c.o -o cmTC_4e0c6 
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d0a40/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d0a40.dir/build.make CMakeFiles/cmTC_d0a40.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0a40.dir/src.c.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc -DCMAKE_HAVE_LIBC_PTHREAD  -c11 -o CMakeFiles/cmTC_d0a40.dir/src.c.o -c /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d0a40
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0a40.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc CMakeFiles/cmTC_d0a40.dir/src.c.o -o cmTC_d0a40 
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the Fortran sgemm exists passed with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_32b59/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_32b59.dir/build.make CMakeFiles/cmTC_32b59.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_32b59.dir/testFortranCompiler.f.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran   -Mcache_align -Mlarge_arrays -Mbackslash  -c /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTC_32b59.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTC_32b59
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32b59.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran  -Mcache_align -Mlarge_arrays -Mbackslash  CMakeFiles/cmTC_32b59.dir/testFortranCompiler.f.o -o cmTC_32b59  /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_intel_lp64.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_sequential.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_core.so -lm -ldl 
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the Fortran cheev exists passed with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_55ee0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_55ee0.dir/build.make CMakeFiles/cmTC_55ee0.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_55ee0.dir/testFortranCompiler.f.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran   -Mcache_align -Mlarge_arrays -Mbackslash  -c /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTC_55ee0.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTC_55ee0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55ee0.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran  -Mcache_align -Mlarge_arrays -Mbackslash  CMakeFiles/cmTC_55ee0.dir/testFortranCompiler.f.o -o cmTC_55ee0  /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_intel_lp64.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_sequential.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_core.so -lm -ldl -lm -ldl 
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the Fortran zhpev exists passed with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1acfc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1acfc.dir/build.make CMakeFiles/cmTC_1acfc.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_1acfc.dir/testFortranCompiler.f.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran   -Mcache_align -Mlarge_arrays -Mbackslash  -c /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTC_1acfc.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTC_1acfc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1acfc.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvfortran  -Mcache_align -Mlarge_arrays -Mbackslash  CMakeFiles/cmTC_1acfc.dir/testFortranCompiler.f.o -o cmTC_1acfc  /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_intel_lp64.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_sequential.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_core.so -lm -ldl /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_intel_lp64.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_sequential.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_core.so -lm -ldl -lm -ldl /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_intel_lp64.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_sequential.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_core.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_intel_lp64.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_sequential.so /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-mkl-2024.0.0-mgclo5ulk2icemqudcxmv4fmxxy2ss7p/mkl/2024.0/lib/libmkl_core.so -lm -ldl 
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function mallinfo exists passed with the following output:
+Change Dir: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_abdee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_abdee.dir/build.make CMakeFiles/cmTC_abdee.dir/build
+gmake[1]: Entering directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_abdee.dir/CheckFunctionExists.c.o
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc   -DCHECK_FUNCTION_EXISTS=mallinfo -c11 -o CMakeFiles/cmTC_abdee.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_abdee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abdee.dir/link.txt --verbose=1
+/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/compilers/bin/nvc  -DCHECK_FUNCTION_EXISTS=mallinfo CMakeFiles/cmTC_abdee.dir/CheckFunctionExists.c.o -o cmTC_abdee 
+gmake[1]: Leaving directory '/leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/CMakeFiles/CMakeTmp'
+
+
+

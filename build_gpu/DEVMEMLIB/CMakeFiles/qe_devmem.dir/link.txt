@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libqe_devmem.a CMakeFiles/qe_devmem.dir/device_memcpy.f90.o CMakeFiles/qe_devmem.dir/device_memcpy_mod.f90.o CMakeFiles/qe_devmem.dir/dxlib_errore.f90.o
+/usr/bin/ranlib ../lib/libqe_devmem.a

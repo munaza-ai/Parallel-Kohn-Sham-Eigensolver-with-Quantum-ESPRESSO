@@ -1,0 +1,164 @@
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+Out of memory allocating 71143849984 bytes of device memory
+Failing in Thread:1
+total/free CUDA memory: 68099571712/66880798720
+Present table dump for device[1]: NVIDIA Tesla GPU 0, compute capability 8.0, threadid=1
+Hint: specify 0x800 bit in NV_ACC_DEBUG for verbose info.
+host:0x12c6da0 device:0x1464a1e53a00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c6ef0 device:0x1464a1e53c00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c6f80 device:0x1464a1e56200 size:128 presentcount:0+2 line:17 name:descriptor
+host:0x12c7010 device:0x1464a1e56400 size:128 presentcount:0+2 line:17 name:descriptor
+host:0x12c70a0 device:0x1464a1e53e00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c71c8 device:0x1464a1e54000 size:8680 presentcount:0+1 line:94 name:dfft
+host:0x130ac80 device:0x1464a0400000 size:288 presentcount:0+1 line:-1 name:_fft_buffers_16
+host:0x130d780 device:0x1464a0400400 size:288 presentcount:0+1 line:-1 name:_data_buffer_16
+host:0x5533f80 device:0x1464a1e56600 size:32768 presentcount:0+1 line:104 name:eig(:)
+host:0x146413d3d8e0 device:0x1463ee000000 size:382205952 presentcount:0+2 line:17 name:fft_array(:)
+host:0x14642a9bf6d0 device:0x146406000000 size:191102976 presentcount:0+2 line:17 name:vloc(:)
+host:0x146440f6f4c0 device:0x14643e000000 size:17369104 presentcount:0+2 line:160 name:aux(:)
+host:0x14644638cc80 device:0x14643a000000 size:34731212 presentcount:0+1 line:95 name:dfft%nl(:)
+host:0x1464700782b0 device:0x146444800000 size:8684552 presentcount:0+2 line:160 name:ekin(:)
+host:0x1464708c20a0 device:0x146444200000 size:4342276 presentcount:0+2 line:160 name:igk(:)
+allocated block device:0x1463ee000000 size:382205952 thread:1
+allocated block device:0x146406000000 size:191102976 thread:1
+allocated block device:0x14643a000000 size:34731520 thread:1
+allocated block device:0x14643e000000 size:17369600 thread:1
+allocated block device:0x146442000000 size:34731520 thread:1
+allocated block device:0x146444200000 size:4342784 thread:1
+allocated block device:0x146444800000 size:8685056 thread:1
+allocated block device:0x1464a0600000 size:16000000 thread:1
+allocated block device:0x1464a1600000 size:8000000 thread:1
+allocated block device:0x1464a1e00000 size:1536 thread:1
+allocated block device:0x1464a1e00600 size:1536 thread:1
+allocated block device:0x1464a1e00c00 size:1536 thread:1
+allocated block device:0x1464a1e01200 size:512 thread:1
+allocated block device:0x1464a1e01400 size:512 thread:1
+allocated block device:0x1464a1e01600 size:512 thread:1
+allocated block device:0x1464a1e01800 size:1536 thread:1
+allocated block device:0x1464a1e01e00 size:1536 thread:1
+allocated block device:0x1464a1e02400 size:1536 thread:1
+allocated block device:0x1464a1e02a00 size:331776 thread:1
+allocated block device:0x1464a1e53a00 size:512 thread:1
+allocated block device:0x1464a1e53c00 size:512 thread:1
+allocated block device:0x1464a1e53e00 size:512 thread:1
+allocated block device:0x1464a1e54000 size:8704 thread:1
+allocated block device:0x1464a1e56200 size:512 thread:1
+allocated block device:0x1464a1e56400 size:512 thread:1
+allocated block device:0x1464a1e56600 size:32768 thread:1
+Accelerator Fatal Error: call to cuMemAlloc returned error 2 (CUDA_ERROR_OUT_OF_MEMORY): Out of memory
+ File: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/cbToy/cb_davidson_main.f90
+ Function: cb_davidson_main:4
+ Line: 104
+
+srun: error: lrdn2791: task 0: Exited with exit code 1
+Out of memory allocating 106706632704 bytes of device memory
+Failing in Thread:1
+total/free CUDA memory: 68099571712/31646547968
+Present table dump for device[1]: NVIDIA Tesla GPU 0, compute capability 8.0, threadid=1
+Hint: specify 0x800 bit in NV_ACC_DEBUG for verbose info.
+host:0x12c6da0 device:0x155053e53a00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c6ef0 device:0x155053e53c00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c6f80 device:0x155053e56200 size:128 presentcount:0+2 line:17 name:descriptor
+host:0x12c7010 device:0x155053e56400 size:128 presentcount:0+2 line:17 name:descriptor
+host:0x12c70a0 device:0x155053e53e00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c71c8 device:0x155053e54000 size:8680 presentcount:0+1 line:94 name:dfft
+host:0x130ac80 device:0x155052400000 size:288 presentcount:0+1 line:-1 name:_fft_buffers_16
+host:0x130d780 device:0x155052400400 size:288 presentcount:0+1 line:-1 name:_data_buffer_16
+host:0x77e9300 device:0x155053e56600 size:32768 presentcount:0+1 line:104 name:eig(:)
+host:0x780e6f0 device:0x154fe4a00000 size:17365604 presentcount:0+1 line:95 name:dfft%nl(:)
+host:0x889f620 device:0x154fe7200000 size:2170952 presentcount:0+2 line:160 name:igk(:)
+host:0x8ab2d40 device:0x154fe7600000 size:4341904 presentcount:0+2 line:160 name:ekin(:)
+host:0x8ed86c0 device:0x154fe4000000 size:8683808 presentcount:0+2 line:160 name:aux(:)
+host:0x154764afa120 device:0x153f1a000000 size:35568877568 presentcount:0+1 line:104 name:evc(:,:)
+host:0x154fcee9dd00 device:0x154fbc000000 size:191102976 presentcount:0+2 line:17 name:fft_array(:)
+host:0x154fda4dfaf0 device:0x154fc8000000 size:95551488 presentcount:0+2 line:17 name:vloc(:)
+allocated block device:0x153f1a000000 size:35568877568 thread:1
+allocated block device:0x154fbc000000 size:191102976 thread:1
+allocated block device:0x154fc8000000 size:95551488 thread:1
+allocated block device:0x154fe4000000 size:8684032 thread:1
+allocated block device:0x154fe4a00000 size:17366016 thread:1
+allocated block device:0x154fe6000000 size:17366016 thread:1
+allocated block device:0x154fe7200000 size:2171392 thread:1
+allocated block device:0x154fe7600000 size:4342272 thread:1
+allocated block device:0x155052600000 size:16000000 thread:1
+allocated block device:0x155053600000 size:8000000 thread:1
+allocated block device:0x155053e00000 size:1536 thread:1
+allocated block device:0x155053e00600 size:1536 thread:1
+allocated block device:0x155053e00c00 size:1536 thread:1
+allocated block device:0x155053e01200 size:512 thread:1
+allocated block device:0x155053e01400 size:512 thread:1
+allocated block device:0x155053e01600 size:512 thread:1
+allocated block device:0x155053e01800 size:1536 thread:1
+allocated block device:0x155053e01e00 size:1536 thread:1
+allocated block device:0x155053e02400 size:1536 thread:1
+allocated block device:0x155053e02a00 size:331776 thread:1
+allocated block device:0x155053e53a00 size:512 thread:1
+allocated block device:0x155053e53c00 size:512 thread:1
+allocated block device:0x155053e53e00 size:512 thread:1
+allocated block device:0x155053e54000 size:8704 thread:1
+allocated block device:0x155053e56200 size:512 thread:1
+allocated block device:0x155053e56400 size:512 thread:1
+allocated block device:0x155053e56600 size:32768 thread:1
+Accelerator Fatal Error: call to cuMemAlloc returned error 2 (CUDA_ERROR_OUT_OF_MEMORY): Out of memory
+ File: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/KS_Solvers/Davidson/cegterg.f90
+ Function: cegterg:18
+ Line: 156
+
+Out of memory allocating 106777804800 bytes of device memory
+Failing in Thread:1
+total/free CUDA memory: 68099571712/31623479296
+Present table dump for device[1]: NVIDIA Tesla GPU 0, compute capability 8.0, threadid=1
+Hint: specify 0x800 bit in NV_ACC_DEBUG for verbose info.
+host:0x12c6da0 device:0x1553dbe53a00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c6ef0 device:0x1553dbe53c00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c6f80 device:0x1553dbe56200 size:128 presentcount:0+2 line:17 name:descriptor
+host:0x12c7010 device:0x1553dbe56400 size:128 presentcount:0+2 line:17 name:descriptor
+host:0x12c70a0 device:0x1553dbe53e00 size:128 presentcount:0+2 line:160 name:descriptor
+host:0x12c71c8 device:0x1553dbe54000 size:8680 presentcount:0+1 line:94 name:dfft
+host:0x130ac80 device:0x1553da400000 size:288 presentcount:0+1 line:-1 name:_fft_buffers_16
+host:0x130d780 device:0x1553da400400 size:288 presentcount:0+1 line:-1 name:_data_buffer_16
+host:0x8363280 device:0x1553dbe56600 size:32768 presentcount:0+1 line:104 name:eig(:)
+host:0x8388390 device:0x15536ea00000 size:17365608 presentcount:0+1 line:95 name:dfft%nl(:)
+host:0x94192c0 device:0x155371200000 size:2172400 presentcount:0+2 line:160 name:igk(:)
+host:0x962cf90 device:0x155371600000 size:4344800 presentcount:0+2 line:160 name:ekin(:)
+host:0x9a53460 device:0x15536e000000 size:8689600 presentcount:0+2 line:160 name:aux(:)
+host:0x154aed45a120 device:0x1542a2000000 size:35592601600 presentcount:0+1 line:104 name:evc(:,:)
+host:0x155358e9dd00 device:0x155346000000 size:191102976 presentcount:0+2 line:17 name:fft_array(:)
+host:0x1553644dfaf0 device:0x155352000000 size:95551488 presentcount:0+2 line:17 name:vloc(:)
+allocated block device:0x1542a2000000 size:35592601600 thread:1
+allocated block device:0x155346000000 size:191102976 thread:1
+allocated block device:0x155352000000 size:95551488 thread:1
+allocated block device:0x15536e000000 size:8689664 thread:1
+allocated block device:0x15536ea00000 size:17366016 thread:1
+allocated block device:0x155370000000 size:17366016 thread:1
+allocated block device:0x155371200000 size:2172416 thread:1
+allocated block device:0x155371600000 size:4344832 thread:1
+allocated block device:0x1553da600000 size:16000000 thread:1
+allocated block device:0x1553db600000 size:8000000 thread:1
+allocated block device:0x1553dbe00000 size:1536 thread:1
+allocated block device:0x1553dbe00600 size:1536 thread:1
+allocated block device:0x1553dbe00c00 size:1536 thread:1
+allocated block device:0x1553dbe01200 size:512 thread:1
+allocated block device:0x1553dbe01400 size:512 thread:1
+allocated block device:0x1553dbe01600 size:512 thread:1
+allocated block device:0x1553dbe01800 size:1536 thread:1
+allocated block device:0x1553dbe01e00 size:1536 thread:1
+allocated block device:0x1553dbe02400 size:1536 thread:1
+allocated block device:0x1553dbe02a00 size:331776 thread:1
+allocated block device:0x1553dbe53a00 size:512 thread:1
+allocated block device:0x1553dbe53c00 size:512 thread:1
+allocated block device:0x1553dbe53e00 size:512 thread:1
+allocated block device:0x1553dbe54000 size:8704 thread:1
+allocated block device:0x1553dbe56200 size:512 thread:1
+allocated block device:0x1553dbe56400 size:512 thread:1
+allocated block device:0x1553dbe56600 size:32768 thread:1
+Accelerator Fatal Error: call to cuMemAlloc returned error 2 (CUDA_ERROR_OUT_OF_MEMORY): Out of memory
+ File: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/KS_Solvers/Davidson/cegterg.f90
+ Function: cegterg:18
+ Line: 156
+
+srun: error: lrdn2802: task 1: Exited with exit code 1
+srun: error: lrdn2791: task 0: Exited with exit code 1
+srun: Job step aborted: Waiting up to 182 seconds for job step to finish.
+slurmstepd: error: *** STEP 37555112.2 ON lrdn2791 CANCELLED AT 2026-03-13T11:43:31 ***
+slurmstepd: error: *** JOB 37555112 ON lrdn2791 CANCELLED AT 2026-03-13T11:43:31 ***

@@ -70,6 +70,9 @@ END SUBROUTINE cb_h_psi
   USE cb_module, only : ekin, aux, fft_array, vloc, igk, dfft
   USE cb_module, only : use_overlap
   USE fft_interfaces, only : fwfft, invfft
+#if defined(_OPENACC)
+  USE openacc
+#endif
   implicit none
 ! input variables
   integer, INTENT(IN) :: npwx, npw, nvec
@@ -79,63 +82,71 @@ END SUBROUTINE cb_h_psi
   integer :: ivec, ig
 
   do ivec=1,nvec
-!$omp parallel 
-!$omp workshare
-    aux(:) = psi(:,ivec)
-!$omp end workshare nowait
+    !$acc parallel loop present(aux, psi)
+    do ig=1,npwx
+       aux(ig) = psi(ig,ivec)
+    end do
     if (use_overlap) then
-!$omp workshare
-       aux(1:npw) = (1.d0 + exp(-ekin(1:npw)))*psi(1:npw,ivec)
-!$omp end workshare nowait
-   end if
+       !$acc parallel loop present(aux, psi, ekin)
+       do ig=1,npw
+          aux(ig) = (1.d0 + exp(-ekin(ig)))*psi(ig,ivec)
+       end do
+    end if
 
-! initialize fft_array 
-!$omp workshare
-    fft_array(:) = CMPLX(0.d0,0.d0)
-!$omp end workshare nowait
+! initialize fft_array
+    !$acc parallel loop present(fft_array)
+    do ig = 1, size(fft_array)
+       fft_array(ig) = CMPLX(0.d0,0.d0)
+    end do
 
 ! apply the kinetic energy to each wave function
-!$omp do
+    !$acc parallel loop present(hpsi, aux, ekin)
     do ig=1,npw
        hpsi(ig,ivec) = ekin(ig) * aux(ig)
     end do
-!$omp end do nowait
 ! bring the wavefunction to real space
-!$omp do
+    !$acc parallel loop present(fft_array, igk, aux)
     do ig = 1, npw
        fft_array(dfft%nl(igk(ig))) = aux(ig)
     end do
-!$omp end do nowait
     if (gamma_only_save) then
-!$omp do
+       !$acc parallel loop present(fft_array, igk, aux)
        do ig = gstart, npw
           fft_array(dfft%nlm(igk(ig))) = CONJG(aux(ig))
        end do
-!$omp end do nowait
-!$omp single
        if (gstart==2) fft_array(dfft%nl(igk(1))) = CMPLX(REAL(aux(1)),0.d0,kind=DP)
-!$omp end single
     end if
-!$omp end parallel
+
+    !$acc host_data use_device(fft_array)
     call invfft('Wave',fft_array,dfft) !  >>> FFT G->R <<<
+    !$acc end host_data
 ! compute the potential energy contribution
-    fft_array(:) = vloc(:) * fft_array(:)
+    !$acc parallel loop present(fft_array, vloc)
+    do ig = 1, dfft%nnr
+       fft_array(ig) = vloc(ig) * fft_array(ig)
+    end do
 ! back to reciprocal space and add to the kinetic term
+    !$acc host_data use_device(fft_array)
     call fwfft('Wave',fft_array,dfft)  !  >>> FFT R->G <<<
-!$omp parallel 
-!$omp do
+    !$acc end host_data
+
+    !$acc parallel loop present(fft_array, hpsi, igk)
     do ig = 1, npw
        hpsi(ig,ivec) = hpsi(ig,ivec) + fft_array(dfft%nl(igk(ig)))
     end do
-!$omp end do
     if (use_overlap) then
-!$omp workshare
-       hpsi(1:npw,ivec) = (1.d0 + exp(-ekin(1:npw)))*hpsi(1:npw,ivec)
-!$omp end workshare nowait
+       !$acc parallel loop present(hpsi, ekin)
+       do ig=1,npw
+          hpsi(ig,ivec) = (1.d0 + exp(-ekin(ig)))*hpsi(ig,ivec)
+       end do
     end if
-!$omp end parallel 
   end do
-  if (gamma_only_save .and. gstart==2) hpsi(1,1:nvec) = CMPLX(REAL(hpsi(1,1:nvec)),0.d0,kind=DP)
+  if (gamma_only_save .and. gstart==2) then
+     !$acc parallel loop present(hpsi)
+     do ivec = 1, nvec
+        hpsi(1,ivec) = CMPLX(REAL(hpsi(1,ivec)),0.d0,kind=DP)
+     end do
+  end if
 
  end subroutine cb_h_psi_
 !----------------------------------------------------------------------------

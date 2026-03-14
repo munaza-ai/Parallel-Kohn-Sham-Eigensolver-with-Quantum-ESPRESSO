@@ -14,7 +14,6 @@
 
 ! allocate the fft grid for the potential and initialize to 0
 allocate ( vloc(dfft%nnr), fft_array(dfft%nnr) ) ; fft_array(:) =CMPLX(0.d0,0.d0)
-! Create device copies early; compute still happens on host
 !$acc enter data create(vloc, fft_array)
 ! fill the non-vanishing fourier components according to the CB definition
   do ig=1,ngm 
@@ -34,7 +33,8 @@ allocate ( vloc(dfft%nnr), fft_array(dfft%nnr) ) ; fft_array(:) =CMPLX(0.d0,0.d0
      if (gamma_only_save) fft_array(dfft%nlm(ig)) = CONJG(fft_array(dfft%nl(ig)))
      if (gg(ig) > 11.d0*nc2 + eps8 ) exit
   end do
-! fourier transform the potential to real space >>>> FFT G->R <<<<
+! fourier transform the potential to real space >>>> FFT G->R <<<< 
+
 !  call invfft ('Smooth',fft_array,dfft)
 !emine: now when you send sth to invfft it goes to invfft_y
 !which goes to fft_fwinv.f90 new interface
@@ -42,8 +42,8 @@ allocate ( vloc(dfft%nnr), fft_array(dfft%nnr) ) ; fft_array(:) =CMPLX(0.d0,0.d0
 !Currently in setlocal.f90 of QE, local potential is brought to real space with 
 !rho grid
   call invfft ('Rho',fft_array,dfft)
-! Build vloc in real space (host)
-  vloc(:) = REAL(fft_array(:))
-! Only now copy vloc to the device for downstream GPU operators
-!$acc update device(vloc)
+
+   vloc(:) = REAL(fft_array(:))
+   !$acc update device(vloc)
+
   end subroutine set_cb_potential

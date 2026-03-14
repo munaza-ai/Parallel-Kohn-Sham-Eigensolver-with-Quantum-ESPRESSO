@@ -1,0 +1,138 @@
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-mpi/2021.12.1 intel-oneapi-tbb/2021.12.0
+========================================
+GPU SCALING BENCHMARK
+========================================
+Node: lrdn1802.leonardo.local
+GPUs: 4
+
+========================================
+TEST 1: Single k-point, vary GPU count
+  (ncell=4, ecutwfc=8, nbnd=768)
+  Tests PW-parallel GPU offloading
+========================================
+
+--- np=1 GPU(s), nd=1 (cegterg) ---
+ parallel MPI defs : np=            1 nb=            1   nd=            1   np=
+             1
+OpenACC rank 0 using device 0 out of 1
+ nks >
+          144          144          144      2985984
+ ngm =      1084689
+ npwx =       135811
+Timing summary:
+     davidson     :     61.98s CPU     63.65s WALL (      10 calls)
+     g_psi        :      0.14s CPU      0.14s WALL (     184 calls)
+     fftw         :      1.91s CPU     32.48s WALL (   94848 calls)
+                                       31.74s GPU  (   94848 calls)
+     ffts         :      0.06s CPU      0.11s WALL
+
+
+
+--- np=2 GPU(s), nd=1 (cegterg) ---
+ parallel MPI defs : np=            2 nb=            1   nd=            1   np=
+             1
+OpenACC rank 0 using device 0 out of 1
+ nks >
+          144          144          144      1492992
+ ngm =       542344
+ npwx =        68019
+Timing summary:
+     davidson     :     71.41s CPU     81.44s WALL (      10 calls)
+     g_psi        :      0.07s CPU      0.07s WALL (     184 calls)
+     fftw         :     39.70s CPU     59.34s WALL (   94824 calls)
+                                       58.58s GPU  (   94824 calls)
+     ffts         :      0.07s CPU      0.07s WALL
+
+
+
+--- np=4 GPU(s), nd=1 (cegterg) ---
+ parallel MPI defs : np=            4 nb=            1   nd=            1   np=
+             1
+OpenACC rank 0 using device 0 out of 2
+ nks >
+          144          144          144       746496
+ ngm =       271171
+ npwx =        34013
+Timing summary:
+     davidson     :     49.05s CPU     60.24s WALL (      10 calls)
+     g_psi        :      0.04s CPU      0.04s WALL (     180 calls)
+     fftw         :     25.90s CPU     36.26s WALL (   94756 calls)
+                                       35.51s GPU  (   94756 calls)
+     ffts         :      0.02s CPU      0.02s WALL
+
+
+
+--- np=8 GPU(s), nd=1 (cegterg) ---
+ parallel MPI defs : np=            8 nb=            1   nd=            1   np=
+             1
+OpenACC rank 0 using device 0 out of 4
+ nks >
+          144          144          144       373248
+ ngm =       135585
+ npwx =        17002
+Timing summary:
+     davidson     :     40.84s CPU     47.37s WALL (      10 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (     184 calls)
+     fftw         :     21.66s CPU     25.47s WALL (   94746 calls)
+                                       24.71s GPU  (   94746 calls)
+     ffts         :      0.01s CPU      0.02s WALL
+
+
+
+========================================
+TEST 2: 4 k-points, k-pool parallelism
+  (ncell=4, ecutwfc=8, nbnd=768)
+  Tests k-point distribution over GPUs
+========================================
+
+--- np=8, nk=1 (k-pool parallelism) ---
+ parallel MPI defs : np=            8 nb=            1   nd=            1   np=
+             1
+OpenACC rank 0 using device 0 out of 4
+ nks >
+          144          144          144       373248
+ ngm =       135585
+ npwx =        17002
+Timing summary:
+     davidson     :     40.66s CPU     47.15s WALL (      10 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (     184 calls)
+     fftw         :     21.60s CPU     25.41s WALL (   94746 calls)
+                                       24.66s GPU  (   94746 calls)
+     ffts         :      0.01s CPU      0.02s WALL
+
+
+
+--- np=8, nk=2 (k-pool parallelism) ---
+ parallel MPI defs : np=            8 nb=            1   nd=            1   np=
+             2
+OpenACC rank 0 using device 0 out of 4
+ nks >
+          144          144          144       746496
+ ngm =       271171
+ npwx =        34013
+Timing summary:
+     davidson     :     27.36s CPU     28.52s WALL (       5 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (      92 calls)
+     fftw         :     16.85s CPU     19.93s WALL (   47680 calls)
+                                       19.54s GPU  (   47680 calls)
+     ffts         :      0.02s CPU      0.03s WALL
+
+
+
+--- np=8, nk=4 (k-pool parallelism) ---
+ parallel MPI defs : np=            8 nb=            1   nd=            1   np=
+             4
+OpenACC rank 0 using device 0 out of 4
+ nks >
+          144          144          144      1492992
+ ngm =       542344
+ npwx =        68019
+Timing summary:
+     davidson     :     28.48s CPU     29.33s WALL (       3 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (      60 calls)
+     fftw         :     18.69s CPU     22.19s WALL (   28888 calls)
+                                       21.95s GPU  (   28888 calls)
+     ffts         :      0.04s CPU      0.05s WALL
+
+

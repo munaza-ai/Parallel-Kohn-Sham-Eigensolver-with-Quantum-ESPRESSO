@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libqe_fftx_c.a CMakeFiles/qe_fftx_c.dir/fft_stick.c.o CMakeFiles/qe_fftx_c.dir/fftw.c.o CMakeFiles/qe_fftx_c.dir/fftw_sp.c.o CMakeFiles/qe_fftx_c.dir/fftw_dp.c.o
+/usr/bin/ranlib ../../lib/libqe_fftx_c.a

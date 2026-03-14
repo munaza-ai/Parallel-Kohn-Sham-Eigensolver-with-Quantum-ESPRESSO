@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libqe_utilx_c.a CMakeFiles/qe_utilx_c.dir/cptimer.c.o CMakeFiles/qe_utilx_c.dir/copy.c.o CMakeFiles/qe_utilx_c.dir/c_mkdir.c.o CMakeFiles/qe_utilx_c.dir/eval_infix.c.o CMakeFiles/qe_utilx_c.dir/fletcher32.c.o CMakeFiles/qe_utilx_c.dir/md5.c.o CMakeFiles/qe_utilx_c.dir/md5_from_file.c.o CMakeFiles/qe_utilx_c.dir/memstat.c.o CMakeFiles/qe_utilx_c.dir/memusage.c.o CMakeFiles/qe_utilx_c.dir/ptrace.c.o
+/usr/bin/ranlib ../lib/libqe_utilx_c.a

@@ -10,11 +10,13 @@ set(src_cb_operators
 
 qe_add_library(cb_operators ${src_cb_operators})
 
+qe_enable_cuda_fortran("${src_cb_operators}")
+
 target_link_libraries(cb_operators
     PUBLIC
         cb_lib
         qe_fftx
         qe_utilx
-	qe_openacc_fortran)
+        qe_openacc_fortran)
 
 qe_install_targets(cb_operators)

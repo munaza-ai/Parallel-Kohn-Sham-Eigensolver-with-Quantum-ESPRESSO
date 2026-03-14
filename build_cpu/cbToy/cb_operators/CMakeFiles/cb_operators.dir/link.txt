@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libcb_operators.a CMakeFiles/cb_operators.dir/cb_g_psi.f90.o CMakeFiles/cb_operators.dir/cb_h_psi.f90.o CMakeFiles/cb_operators.dir/cb_s_psi.f90.o CMakeFiles/cb_operators.dir/my_h_psi.f90.o
+/usr/bin/ranlib ../../lib/libcb_operators.a

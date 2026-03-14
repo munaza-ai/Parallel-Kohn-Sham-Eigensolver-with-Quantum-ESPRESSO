@@ -1,12 +1,17 @@
 ###########################################################
 # cbToy miniapp
 ###########################################################
+
+# Add subdirectories for libraries
 add_subdirectory(cb_lib)
 add_subdirectory(cb_operators)
 
+# Define the executable target
 set(src_cb_davidson_main cb_davidson_main.f90)
 
 qe_add_executable(cb_davidson_main.x ${src_cb_davidson_main})
+
+qe_enable_cuda_fortran("${src_cb_davidson_main}")
 
 target_link_libraries(cb_davidson_main.x
     PRIVATE
@@ -17,6 +22,6 @@ target_link_libraries(cb_davidson_main.x
         qe_fftx
         qe_mpi_fortran
         qe_utilx
-	qe_openacc_fortran)
+        qe_openacc_fortran)
 
 qe_install_targets(cb_davidson_main.x)

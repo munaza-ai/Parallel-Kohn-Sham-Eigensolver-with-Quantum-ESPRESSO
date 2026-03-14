@@ -1,0 +1,28 @@
+file(REMOVE_RECURSE
+  "../lib/libqe_utilx.a"
+  "../lib/libqe_utilx.pdb"
+  "CMakeFiles/qe_utilx.dir/clib_wrappers.f90.o"
+  "CMakeFiles/qe_utilx.dir/clocks_handler.f90.o"
+  "CMakeFiles/qe_utilx.dir/data_buffer.f90.o"
+  "CMakeFiles/qe_utilx.dir/divide.f90.o"
+  "CMakeFiles/qe_utilx.dir/error_handler.f90.o"
+  "CMakeFiles/qe_utilx.dir/export_gstart_2_solvers.f90.o"
+  "CMakeFiles/qe_utilx.dir/find_free_unit.f90.o"
+  "CMakeFiles/qe_utilx.dir/fletcher32_mod.f90.o"
+  "CMakeFiles/qe_utilx.dir/mem_counter.f90.o"
+  "CMakeFiles/qe_utilx.dir/mp.f90.o"
+  "CMakeFiles/qe_utilx.dir/mp_bands_util.f90.o"
+  "CMakeFiles/qe_utilx.dir/mp_base.f90.o"
+  "CMakeFiles/qe_utilx.dir/mp_base_gpu.f90.o"
+  "CMakeFiles/qe_utilx.dir/nvtx_wrapper.f90.o"
+  "CMakeFiles/qe_utilx.dir/parallel_include.f90.o"
+  "CMakeFiles/qe_utilx.dir/print_mem.f90.o"
+  "CMakeFiles/qe_utilx.dir/set_mpi_comm_4_solvers.f90.o"
+  "CMakeFiles/qe_utilx.dir/thread_util.f90.o"
+  "CMakeFiles/qe_utilx.dir/util_param.f90.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang Fortran)
+  include(CMakeFiles/qe_utilx.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,12 @@
+# The fortran modules provided by this target.
+provides
+ clib_wrappers.mod
+ data_buffer.mod
+ error_handler.mod
+ fletcher32_mod.mod
+ mp.mod
+ mp_bands_util.mod
+ mytime.mod
+ nvtx.mod
+ parallel_include.mod
+ util_param.mod

@@ -51,20 +51,16 @@ CONTAINS
     !
     my_comm = MPI_COMM_WORLD 
     CALL mp_world_start( my_comm )
-   #if defined (__CUDA)
-      ndevs=acc_get_num_devices(acc_device_nvidia)
-      call acc_set_devices_num(mpime, acc_device_nvidia)
-     # endif
-
     !
     ! get input arguments
     !
     CALL get_command_line ( )
-    write (6,*) 'parallel MPI defs : np=',nproc,'nb=', nband_,'  nd=', ndiag_, ' nk=', npool_
+    write (6,*) 'parallel MPI defs : np=',nproc,'nb=', nband_,'  nd=', ndiag_,'  np=', npool_
     !
+    ! pool group inizialization
+    CALL mp_start_pools ( npool_, my_comm )
     ! band group inizialization
     !
-    CALL mp_start_pools(npool_, my_comm)
     CALL mp_start_bands ( nband_, intra_pool_comm )
     !
     ! distributed diag/ortho inizialization
@@ -77,10 +73,10 @@ CONTAINS
     ELSE
        ! one diag group per individual k-point, with band group and
        ! diag group both being children of the current top level comm
-       ortho_parent_comm = my_comm
+       ortho_parent_comm = intra_pool_comm
     END IF
 
-    CALL laxlib_start  ( ndiag_, my_comm, &
+    CALL laxlib_start  ( ndiag_, ortho_parent_comm, &
                         do_distr_diag_inside_bgrp_ = do_distr_diag_inside_bgrp )
 
     ndiag = ndiag_ ! copy input value to output value for latr use
@@ -97,6 +93,8 @@ CONTAINS
     !
     CALL mp_comm_free ( intra_bgrp_comm )
     CALL mp_comm_free ( inter_bgrp_comm )
+    CALL mp_comm_free ( intra_pool_comm )
+    CALL mp_comm_free ( inter_pool_comm )
     CALL mp_world_end( )
     !
     RETURN

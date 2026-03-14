@@ -1,0 +1,31 @@
+# CB Davidson miniapp scaling timings
+# Source: cb_scaling_37397892.out (Ex2, Ex3) and cb_scaling_37398584.out (Ex4)
+# All times are WALL time in seconds for the davidson kernel (1 call = all k-points)
+
+# Exercise 2: PW parallelism (cegterg, nd=1, single k-point Si4)
+# Parameter: np = number of MPI ranks
+exercise	label	param_name	param_value	davidson_wall_s	fftw_wall_s
+2	np=1	np	1	31.94	6.18
+2	np=2	np	2	21.70	3.33
+2	np=4	np	4	14.73	1.90
+2	np=8	np	8	16.45	1.81
+2	np=16	np	16	13.32	0.99
+2	np=32	np	32	12.57	0.72
+
+# Exercise 3: ScaLAPACK parallelism (pcegterg, np=32, single k-point Si4)
+# Parameter: nd = number of diagonalization (ScaLAPACK) processes
+3	nd=1	nd	1	12.78	0.91
+3	nd=2	nd	2	35.09	0.80
+3	nd=4	nd	4	14.09	1.56
+3	nd=8	nd	8	13.68	1.00
+3	nd=16	nd	16	5.95	1.51
+
+# Exercise 4: k-point pool parallelism (np=32, Si4 50 k-points)
+# Parameter: nk = number of k-point pools
+# davidson_wall_s = wall time per pool (each pool processes 50/nk k-points)
+4	nk=1	nk	1	97.36	23.25
+4	nk=2	nk	2	60.65	11.34
+4	nk=4	nk	4	62.22	8.87
+4	nk=8	nk	8	45.61	8.04
+4	nk=16	nk	16	39.86	9.04
+4	nk=32	nk	32	32.02	8.65

@@ -29,13 +29,6 @@ set(src_dense
     DENSE/gram_schmidt_gamma.f90
     DENSE/rotate_driver.f90)
     # GPU
-#    DENSE/rotate_wfc_gamma_gpu.f90
-#    DENSE/rotate_xpsi_k_gpu.f90
- #   DENSE/rotate_xpsi_gamma_gpu.f90
-  #  DENSE/gram_schmidt_k_gpu.f90
-   # DENSE/gram_schmidt_gamma_gpu.f90
-    #DENSE/rotate_wfc_k_gpu.f90
-    #DENSE/rotate_driver_cuf.f90)
 qe_enable_cuda_fortran("${src_dense}")
 
 qe_add_library(qe_kssolver_davidson ${src_davidson})

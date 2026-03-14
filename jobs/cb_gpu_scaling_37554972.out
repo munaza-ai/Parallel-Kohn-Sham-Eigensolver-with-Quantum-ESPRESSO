@@ -1,0 +1,35 @@
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-mpi/2021.12.1 intel-oneapi-tbb/2021.12.0
+========================================
+GPU SCALING BENCHMARK
+========================================
+Node: lrdn1802.leonardo.local
+GPUs: 4
+
+========================================
+TEST 1: Single k-point, vary GPU count
+  (ncell=4, ecutwfc=8, nbnd=768)
+  Tests PW-parallel GPU offloading
+========================================
+
+--- np=1 GPU(s), nd=1 (cegterg) ---
+ parallel MPI defs : np=            1 nb=            1   nd=            1   np=
+             1
+OpenACC rank 0 using device 0 out of 1
+ nks >
+          288          288          288     23887872
+ ngm =      8682803
+ npwx =      1085569
+
+
+--- np=2 GPU(s), nd=1 (cegterg) ---
+ parallel MPI defs : np=            2 nb=            1   nd=            1   np=
+             1
+OpenACC rank 0 using device 0 out of 1
+ nks >
+          288          288          288     11943936
+ ngm =      4341402
+ npwx =       543100
+
+
+--- np=4 GPU(s), nd=1 (cegterg) ---

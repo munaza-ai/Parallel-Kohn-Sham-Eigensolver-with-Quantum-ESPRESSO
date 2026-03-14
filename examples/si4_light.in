@@ -1,0 +1,6 @@
+&system crystal_name='Si', ecutwfc=6.5d0, ethr=1.d-5, ncell=4, nbnd=256, david=2 /
+4
+0.0 0.0 0.0
+0.0 0.0 0.2
+0.2 0.2 0.5
+0.5 0.5 0.5

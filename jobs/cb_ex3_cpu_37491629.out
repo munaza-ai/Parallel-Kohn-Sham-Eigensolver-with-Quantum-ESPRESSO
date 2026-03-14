@@ -1,0 +1,259 @@
+Loading intel-oneapi-mkl/2024.0.0--intel-oneapi-mpi--2021.12.1
+  Loading requirement: intel-oneapi-mpi/2021.12.1 intel-oneapi-tbb/2021.12.0
+
+========================================
+EXERCISE 3: CPU ScaLAPACK scaling
+========================================
+Executable: /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/build_cpu/bin/cb_davidson_main.x
+Input:      /leonardo/home/userexternal/gpeddeun/P2.6_KS_25_26/examples/si4.in
+MPI ranks:  32
+
+========================================
+BLOCK 1: fixed nd=1, vary nb
+========================================
+
+--- np=32, nd=1, nb=1 ---
+ parallel MPI defs : np=           32 nb=            1   nd=            1   np=
+             1
+ nks >
+           54           54           54         5832
+ ngm =         1653
+ npwx =          207
+Timing summary:
+     davidson     :     15.82s CPU     17.05s WALL (       1 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      17 calls)
+     fftw         :      2.17s CPU      2.20s WALL (   11510 calls)
+     ffts         :      0.02s CPU      0.10s WALL
+
+
+--- np=32, nd=1, nb=2 ---
+ parallel MPI defs : np=           32 nb=            2   nd=            1   np=
+             1
+ nks >
+           54           54           54        11664
+ ngm =         3304
+ npwx =          414
+Timing summary:
+     davidson     :     16.64s CPU     17.25s WALL (       1 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      17 calls)
+     fftw         :      1.80s CPU      2.03s WALL (   11084 calls)
+     ffts         :      0.06s CPU      0.23s WALL
+
+
+--- np=32, nd=1, nb=4 ---
+ parallel MPI defs : np=           32 nb=            4   nd=            1   np=
+             1
+ nks >
+           54           54           54        20412
+ ngm =         6610
+ npwx =          827
+Timing summary:
+     davidson     :     17.22s CPU     17.53s WALL (       1 calls)
+     g_psi        :      0.03s CPU      0.03s WALL (      20 calls)
+     fftw         :      1.53s CPU      1.56s WALL (   10212 calls)
+     ffts         :      0.02s CPU      0.12s WALL
+
+
+--- np=32, nd=1, nb=8 ---
+ parallel MPI defs : np=           32 nb=            8   nd=            1   np=
+             1
+ nks >
+           54           54           54        40824
+ ngm =        13218
+ npwx =         1655
+Timing summary:
+     davidson     :     15.63s CPU     15.95s WALL (       1 calls)
+     g_psi        :      0.05s CPU      0.05s WALL (      16 calls)
+     fftw         :      2.45s CPU      2.49s WALL (    9538 calls)
+     ffts         :      0.01s CPU      0.14s WALL
+
+
+========================================
+BLOCK 2: fixed nb=1, vary nd
+========================================
+
+--- np=32, nd=1, nb=1 ---
+ parallel MPI defs : np=           32 nb=            1   nd=            1   np=
+             1
+ nks >
+           54           54           54         5832
+ ngm =         1653
+ npwx =          207
+Timing summary:
+     davidson     :     14.66s CPU     15.00s WALL (       1 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      17 calls)
+     fftw         :      1.12s CPU      1.14s WALL (   11510 calls)
+     ffts         :      0.08s CPU      0.20s WALL
+
+
+--- np=32, nd=4, nb=1 ---
+ parallel MPI defs : np=           32 nb=            1   nd=            4   np=
+             1
+ nks >
+           54           54           54         5832
+ ngm =         1653
+ npwx =          207
+Timing summary:
+     davidson     :     46.02s CPU     47.76s WALL (       1 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      17 calls)
+     fftw         :      2.44s CPU      2.48s WALL (   11510 calls)
+     ffts         :      0.05s CPU      0.24s WALL
+
+
+--- np=32, nd=9, nb=1 ---
+ parallel MPI defs : np=           32 nb=            1   nd=            9   np=
+             1
+ nks >
+           54           54           54         5832
+ ngm =         1653
+ npwx =          207
+Timing summary:
+     davidson     :     28.52s CPU     30.40s WALL (       1 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      17 calls)
+     fftw         :      2.42s CPU      2.57s WALL (   11510 calls)
+     ffts         :      0.17s CPU      0.30s WALL
+
+
+--- np=32, nd=16, nb=1 ---
+ parallel MPI defs : np=           32 nb=            1   nd=           16   np=
+             1
+ nks >
+           54           54           54         5832
+ ngm =         1653
+ npwx =          207
+Timing summary:
+     davidson     :     25.73s CPU     27.65s WALL (       1 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      17 calls)
+     fftw         :      4.39s CPU      4.61s WALL (   11510 calls)
+     ffts         :      0.04s CPU      0.16s WALL
+
+
+========================================
+BLOCK 3: vary nd and nb together
+========================================
+
+--- np=32, nd=4, nb=2 ---
+ parallel MPI defs : np=           32 nb=            2   nd=            4   np=
+             1
+ nks >
+           54           54           54        11664
+ ngm =         3304
+ npwx =          414
+Timing summary:
+     davidson     :     45.58s CPU     47.57s WALL (       1 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      17 calls)
+     fftw         :      1.38s CPU      1.41s WALL (   11084 calls)
+     ffts         :      0.03s CPU      0.24s WALL
+
+
+--- np=32, nd=4, nb=4 ---
+ parallel MPI defs : np=           32 nb=            4   nd=            4   np=
+             1
+ nks >
+           54           54           54        20412
+ ngm =         6610
+ npwx =          827
+Timing summary:
+     davidson     :     51.26s CPU     53.45s WALL (       1 calls)
+     g_psi        :      0.03s CPU      0.03s WALL (      20 calls)
+     fftw         :      1.88s CPU      2.17s WALL (   10212 calls)
+     ffts         :      0.01s CPU      0.13s WALL
+
+
+--- np=32, nd=4, nb=8 ---
+ parallel MPI defs : np=           32 nb=            8   nd=            4   np=
+             1
+ nks >
+           54           54           54        40824
+ ngm =        13218
+ npwx =         1655
+Timing summary:
+     davidson     :     43.59s CPU     44.66s WALL (       1 calls)
+     g_psi        :      0.06s CPU      0.06s WALL (      16 calls)
+     fftw         :      2.53s CPU      2.58s WALL (    9538 calls)
+     ffts         :      0.03s CPU      0.21s WALL
+
+
+--- np=32, nd=9, nb=2 ---
+ parallel MPI defs : np=           32 nb=            2   nd=            9   np=
+             1
+ nks >
+           54           54           54        11664
+ ngm =         3304
+ npwx =          414
+Timing summary:
+     davidson     :     29.03s CPU     30.82s WALL (       1 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (      17 calls)
+     fftw         :      1.74s CPU      2.10s WALL (   11084 calls)
+     ffts         :      0.21s CPU      0.28s WALL
+
+
+--- np=32, nd=9, nb=4 ---
+ parallel MPI defs : np=           32 nb=            4   nd=            9   np=
+             1
+ nks >
+           54           54           54        20412
+ ngm =         6610
+ npwx =          827
+Timing summary:
+     davidson     :     34.15s CPU     35.55s WALL (       1 calls)
+     g_psi        :      0.03s CPU      0.03s WALL (      20 calls)
+     fftw         :      1.47s CPU      1.49s WALL (   10212 calls)
+     ffts         :      0.10s CPU      0.16s WALL
+
+
+--- np=32, nd=9, nb=8 ---
+ parallel MPI defs : np=           32 nb=            8   nd=            9   np=
+             1
+ nks >
+           54           54           54        40824
+ ngm =        13218
+ npwx =         1655
+Timing summary:
+     davidson     :     29.95s CPU     30.94s WALL (       1 calls)
+     g_psi        :      0.06s CPU      0.06s WALL (      16 calls)
+     fftw         :      2.56s CPU      2.67s WALL (    9538 calls)
+     ffts         :      0.21s CPU      0.25s WALL
+
+
+--- np=32, nd=16, nb=2 ---
+ parallel MPI defs : np=           32 nb=            2   nd=           16   np=
+             1
+ nks >
+           54           54           54        11664
+ ngm =         3304
+ npwx =          414
+Timing summary:
+     davidson     :     24.83s CPU     27.20s WALL (       1 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      17 calls)
+     fftw         :      2.67s CPU      3.48s WALL (   11084 calls)
+     ffts         :      0.05s CPU      0.14s WALL
+
+
+--- np=32, nd=16, nb=4 ---
+ parallel MPI defs : np=           32 nb=            4   nd=           16   np=
+             1
+ nks >
+           54           54           54        20412
+ ngm =         6610
+ npwx =          827
+Timing summary:
+     davidson     :     30.44s CPU     31.48s WALL (       1 calls)
+     g_psi        :      0.03s CPU      0.03s WALL (      20 calls)
+     fftw         :      1.45s CPU      1.47s WALL (   10212 calls)
+     ffts         :      0.15s CPU      0.22s WALL
+
+
+--- np=32, nd=16, nb=8 ---
+ parallel MPI defs : np=           32 nb=            8   nd=           16   np=
+             1
+ nks >
+           54           54           54        40824
+ ngm =        13218
+ npwx =         1655
+Timing summary:
+     davidson     :     25.30s CPU     26.63s WALL (       1 calls)
+     g_psi        :      0.06s CPU      0.06s WALL (      16 calls)
+     fftw         :      2.52s CPU      2.56s WALL (    9538 calls)
+     ffts         :      0.16s CPU      0.27s WALL
+

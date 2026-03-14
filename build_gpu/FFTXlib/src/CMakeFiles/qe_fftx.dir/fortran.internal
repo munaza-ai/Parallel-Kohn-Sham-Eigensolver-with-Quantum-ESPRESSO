@@ -1,0 +1,25 @@
+# The fortran modules provided by this target.
+provides
+ fft_buffers.mod
+ fft_ggen.mod
+ fft_helper_subroutines.mod
+ fft_interfaces.mod
+ fft_parallel.mod
+ fft_parallel_2d.mod
+ fft_param.mod
+ fft_scalar.mod
+ fft_scalar_cufft.mod
+ fft_scalar_dfti.mod
+ fft_scatter.mod
+ fft_scatter_2d.mod
+ fft_scatter_2d_gpu.mod
+ fft_scatter_gpu.mod
+ fft_smallbox.mod
+ fft_smallbox_type.mod
+ fft_support.mod
+ fft_types.mod
+ fftw_interfaces.mod
+ mkl_dft_type.mod
+ mkl_dfti.mod
+ scatter_mod.mod
+ stick_base.mod
